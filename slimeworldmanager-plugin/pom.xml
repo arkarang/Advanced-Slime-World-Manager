@@ -44,17 +44,18 @@
         </dependency>
         <dependency>
             <groupId>com.grinderwolf</groupId>
+            <artifactId>slimeworldmanager-nms-v116-4-5</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!--
+        <dependency>
+            <groupId>com.grinderwolf</groupId>
             <artifactId>slimeworldmanager-nms-v116-0-1</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.grinderwolf</groupId>
             <artifactId>slimeworldmanager-nms-v116-2-3</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.grinderwolf</groupId>
-            <artifactId>slimeworldmanager-nms-v116-4-5</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -67,6 +68,7 @@
             <artifactId>slimeworldmanager-nms-v117-1</artifactId>
             <version>${project.version}</version>
         </dependency>
+        -->
         <dependency>
             <groupId>com.github.luben</groupId>
             <artifactId>zstd-jni</artifactId>

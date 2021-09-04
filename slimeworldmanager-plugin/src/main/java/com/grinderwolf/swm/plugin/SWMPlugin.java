@@ -9,11 +9,7 @@ import com.grinderwolf.swm.api.world.SlimeWorld;
 import com.grinderwolf.swm.api.world.properties.SlimePropertyMap;
 import com.grinderwolf.swm.nms.CraftSlimeWorld;
 import com.grinderwolf.swm.nms.SlimeNMS;
-import com.grinderwolf.swm.nms.v11601.v11601SlimeNMS;
-import com.grinderwolf.swm.nms.v11623.v11623SlimeNMS;
 import com.grinderwolf.swm.nms.v11645.v11645SlimeNMS;
-import com.grinderwolf.swm.nms.v117.v1170SlimeNMS;
-import com.grinderwolf.swm.nms.v1171.v1171SlimeNMS;
 import com.grinderwolf.swm.plugin.commands.CommandManager;
 import com.grinderwolf.swm.plugin.config.ConfigManager;
 import com.grinderwolf.swm.plugin.config.WorldData;
@@ -151,6 +147,7 @@ public class SWMPlugin extends JavaPlugin implements SlimePlugin {
 
         int dataVersion = Bukkit.getUnsafe().getDataVersion();
         switch(dataVersion) {
+            /*
             case 2566:
             case 2567:
                 return new v11601SlimeNMS(isPaperMC);
@@ -158,12 +155,14 @@ public class SWMPlugin extends JavaPlugin implements SlimePlugin {
             case 2580:
                 return new v11623SlimeNMS(isPaperMC);
             case 2584:
-            case 2586:
-                return new v11645SlimeNMS(isPaperMC, this);
             case 2724:
                 return new v1170SlimeNMS(isPaperMC);
             case 2730:
                 return new v1171SlimeNMS(isPaperMC);
+
+             */
+            case 2586:
+                return new v11645SlimeNMS(isPaperMC, this);
             default:
                 throw new InvalidVersionException("" + dataVersion);
 
